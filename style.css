@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  margin: auto;
+}
+
+.container div {
+  width: 160px;
+  height: 160px;
+}
+
+.container div:hover {
+  border: 1px solid red;
+}
+
+button {
+  border: 0;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
