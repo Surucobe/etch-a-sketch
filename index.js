@@ -1,13 +1,14 @@
 const $container = document.querySelector('.container');
 
-// window.addEventListener('mousemove', (e) => console.log(e.target))
+function changeBgColor() {
+  this.style.backgroundColor = `#${(Math.random() * 0xfffff * 1000000).toString(16).slice(0, 6)}`;
+}
 
 function renderGrid(tag, cont, num) {
   for (let i = 0; i < num; i++) {
     const elm = document.createElement(tag);
-    elm.addEventListener('mousemove', (e) => console.log(working))
+    elm.addEventListener('mouseenter', changeBgColor);
     cont.appendChild(elm);
-
   }
 }
 
