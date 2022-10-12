@@ -13,14 +13,17 @@ body {
 .container {
   display: grid;
   grid-gap: 1px;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-template-columns: repeat(16, 1fr);
   margin: auto;
+  border: 3px solid #000;
+  border-radius: 8px;
+  padding: 3px;
 }
 
 .container div {
-  width: 160px;
-  height: 160px;
+  width: 80px;
+  height: 80px;
 }
 
 button {
@@ -29,4 +32,8 @@ button {
   top: 5px;
   left: 5px;
   cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
 }
